@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as variables;
+
+.choose {
+    background-color: variables.$bg-gray;
+    text-align: center;
+    padding: 60px 120px;
+
+    &__subtitle {
+        color: variables.$accent-color;
+    }
+
+    .advantages {
+        display: flex;
+        gap: 3px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 40px;
+
+        &__item {
+            background-color: variables.$white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 25%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            img {
+                width: 50px;
+                padding: 10px;
+                margin-bottom: 20px;
+                background-color: variables.$bg-color-light;
+                border-radius: 35%;
+            }
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: variables.$gray-text;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            &:hover {
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+                transform: translateY(-5px);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as variables;
+
+.header {
+    padding: 70px 120px;
+    background-image: url('../images/hero-coffee.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        max-width: 550px;
+    }
+
+    &__subtitle {
+        color: variables.$accent-color;
+    }
+
+    &__title {
+        font-size: 58px;
+        line-height: 1.05;
+    }
+
+    &__text {
+        max-width: 400px;
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 20px 0 30px;
+    }
+}

@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as variables;
+
+.order {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('../images/coffee-beans.png');
+    background-size: cover;
+    text-align: center;
+    padding: 60px 120px;
+
+    &__subtitle {
+        color: variables.$light-color;
+    }
+
+    &__text {
+        color: variables.$light-color;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px 0;
+    }
+}

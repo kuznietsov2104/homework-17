@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as variables;
+
+.header__nav {
+    position: sticky;
+    top: 0;
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: variables.$bg-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+    .logo {
+        color: variables.$text-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: 4px;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+        gap: 35px;
+
+        li {
+            a {
+                text-decoration: none;
+                color: variables.$text-color;
+                font-size: 16px;
+                font-weight: 500;
+
+                &:hover {
+                    color: variables.$accent-color;
+                }
+            }
+
+            .active::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: variables.$accent-color;
+
+            }
+        }
+    }
+}
